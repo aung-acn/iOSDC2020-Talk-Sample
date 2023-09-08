@@ -35,9 +35,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: Install Bundled Gems
-        run: make install-bundler
-
       - name: Install Mint
         run: brew install mint
 
